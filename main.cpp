@@ -14,9 +14,13 @@ void helloWord(){
 extern void staticCastTest();
 extern void constCastTest();
 extern void reinterpretCast();
+extern void staticVarTest();
+extern void stringTest();
 
 int main() {
-    reinterpretCast();
+    stringTest();
+//    staticVarTest();
+//    reinterpretCast();
 //    constCastTest();
 //    staticCastTest();
 //    std::cout << "Hello, World!" << std::endl;
