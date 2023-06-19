@@ -16,9 +16,15 @@ extern void constCastTest();
 extern void reinterpretCast();
 extern void staticVarTest();
 extern void stringTest();
+extern void commaOperator();
+extern void arrowOperator();
+extern void dotOperator();
 
 int main() {
-    stringTest();
+//    dotOperator();
+    arrowOperator();
+//    commaOperator();
+//    stringTest();
 //    staticVarTest();
 //    reinterpretCast();
 //    constCastTest();
