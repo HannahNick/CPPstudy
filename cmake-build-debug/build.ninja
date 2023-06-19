@@ -79,6 +79,12 @@ build CMakeFiles/CPPstudy.dir/operator/operatorTest.cpp.obj: CXX_COMPILER__CPPst
   OBJECT_DIR = CMakeFiles\CPPstudy.dir
   OBJECT_FILE_DIR = CMakeFiles\CPPstudy.dir\operator
 
+build CMakeFiles/CPPstudy.dir/quote/quoteTest.cpp.obj: CXX_COMPILER__CPPstudy_Debug E$:/CLionProjects/CPPstudy/quote/quoteTest.cpp || cmake_object_order_depends_target_CPPstudy
+  DEP_FILE = CMakeFiles\CPPstudy.dir\quote\quoteTest.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CPPstudy.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPPstudy.dir\quote
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CPPstudy
@@ -87,7 +93,7 @@ build CMakeFiles/CPPstudy.dir/operator/operatorTest.cpp.obj: CXX_COMPILER__CPPst
 #############################################
 # Link the executable CPPstudy.exe
 
-build CPPstudy.exe: CXX_EXECUTABLE_LINKER__CPPstudy_Debug CMakeFiles/CPPstudy.dir/main.cpp.obj CMakeFiles/CPPstudy.dir/cast/castTest.cpp.obj CMakeFiles/CPPstudy.dir/vartype/varTest.cpp.obj CMakeFiles/CPPstudy.dir/qualifier/qualifierTest.cpp.obj CMakeFiles/CPPstudy.dir/operator/operatorTest.cpp.obj
+build CPPstudy.exe: CXX_EXECUTABLE_LINKER__CPPstudy_Debug CMakeFiles/CPPstudy.dir/main.cpp.obj CMakeFiles/CPPstudy.dir/cast/castTest.cpp.obj CMakeFiles/CPPstudy.dir/vartype/varTest.cpp.obj CMakeFiles/CPPstudy.dir/qualifier/qualifierTest.cpp.obj CMakeFiles/CPPstudy.dir/operator/operatorTest.cpp.obj CMakeFiles/CPPstudy.dir/quote/quoteTest.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPPstudy.dir

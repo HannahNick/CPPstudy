@@ -19,10 +19,12 @@ extern void stringTest();
 extern void commaOperator();
 extern void arrowOperator();
 extern void dotOperator();
+extern void quoteTest();
 
 int main() {
+    quoteTest();
 //    dotOperator();
-    arrowOperator();
+//    arrowOperator();
 //    commaOperator();
 //    stringTest();
 //    staticVarTest();
