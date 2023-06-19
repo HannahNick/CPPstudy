@@ -19,7 +19,7 @@ void varTest(){
 }
 
 class Usb{
-public: static int id;
+    public: static int id;
 };
 
 int Usb::id = 30;//需要在外部初始化，和java有很大区别
