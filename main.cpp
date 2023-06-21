@@ -24,9 +24,11 @@ extern void timeTest();
 extern void tmTest();
 extern void inOutTest();
 extern void cerrorTest();
+extern void structTest();
 
 int main() {
-    cerrorTest();
+    structTest();
+//    cerrorTest();
 //    inOutTest();
 //    tmTest();
 //    timeTest();
