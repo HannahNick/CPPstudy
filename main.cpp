@@ -22,9 +22,13 @@ extern void dotOperator();
 extern void quoteTest();
 extern void timeTest();
 extern void tmTest();
+extern void inOutTest();
+extern void cerrorTest();
 
 int main() {
-    tmTest();
+    cerrorTest();
+//    inOutTest();
+//    tmTest();
 //    timeTest();
 //    quoteTest();
 //    dotOperator();
