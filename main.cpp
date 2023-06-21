@@ -20,9 +20,13 @@ extern void commaOperator();
 extern void arrowOperator();
 extern void dotOperator();
 extern void quoteTest();
+extern void timeTest();
+extern void tmTest();
 
 int main() {
-    quoteTest();
+    tmTest();
+//    timeTest();
+//    quoteTest();
 //    dotOperator();
 //    arrowOperator();
 //    commaOperator();
