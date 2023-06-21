@@ -16,6 +16,30 @@ struct Book{
     char name[20];
 };
 
+/**
+ * 类型定义
+ */
+typedef struct Car{
+    int id;
+    char name[20];
+} Usb;
+
+/**
+ * 作为参数传递
+ * @param book
+ */
+void structParamsTest(struct Book book){
+    cout << "book1: "<<book.name << "\tid:" << book.id << endl;
+}
+
+/**
+ * 作为指针参数传递
+ * @param book
+ */
+void structPointParamsTest(struct Book *book){
+    cout << "book1: "<<book->name << "\tid:" << book->id << endl;
+}
+
 void structTest(){
     Book book1;
     Book book2;
@@ -28,12 +52,12 @@ void structTest(){
 
     cout << "book1: "<<book1.name << "\tid:" << book1.id << endl;
     cout << "book2: "<<book2.name << "\tid:" << book2.id << endl;
+
+    structParamsTest(book1);
+    structPointParamsTest(&book1);
 }
 
-/**
- * 作为参数传递
- * @param book
- */
-void structParamsTest(struct Book book){
-    cout << "book1: "<<book.name << "\tid:" << book.id << endl;
+void typeDefTest(){
+    Usb usb;
 }
+
