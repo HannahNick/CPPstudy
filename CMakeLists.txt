@@ -3,4 +3,4 @@ project(CPPstudy)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CPPstudy main.cpp cast/castTest.cpp vartype/varTest.cpp qualifier/qualifierTest.cpp operator/operatorTest.cpp quote/quoteTest.cpp time/timeTest.cpp io/ioTest.cpp struct/structTest.cpp)
+add_executable(CPPstudy main.cpp cast/castTest.cpp vartype/varTest.cpp qualifier/qualifierTest.cpp operator/operatorTest.cpp quote/quoteTest.cpp time/timeTest.cpp io/ioTest.cpp struct/structTest.cpp class/classTest.cpp)
