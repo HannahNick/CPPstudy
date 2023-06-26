@@ -40,6 +40,7 @@ void structPointParamsTest(struct Book *book){
     cout << "book1: "<<book->name << "\tid:" << book->id << endl;
 }
 
+
 void structTest(){
     Book book1;
     Book book2;

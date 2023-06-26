@@ -25,9 +25,14 @@ extern void tmTest();
 extern void inOutTest();
 extern void cerrorTest();
 extern void structTest();
+extern void classTest();
+extern void overrideTest();
+
 
 int main() {
-    structTest();
+    overrideTest();
+//    classTest();
+//    structTest();
 //    cerrorTest();
 //    inOutTest();
 //    tmTest();

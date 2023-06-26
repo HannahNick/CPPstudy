@@ -4,6 +4,7 @@
 #include "iostream"
 
 using namespace std;
+
 /**
  * 类&对象
  */
@@ -29,6 +30,22 @@ public:
     void setId(int id);
 };
 
+class Phone{
+public:
+    /**
+     * 构造函数
+     * @param id
+     * @param name
+     */
+    Phone(int id,string name){
+        mId = id;
+        mName = name;
+    }
+private:
+    int mId;
+    string mName;
+};
+
 //外部实现
 int Usb::getId() {
     return mId;
@@ -38,5 +55,10 @@ void Usb::setId(int id) {
     mId = id;
 }
 
-
+void classTest(){
+    //没有new这种初始化概念
+    Box box1;
+    box1.setLength(20);
+    cout << box1.getLength() << endl;
+}
 
