@@ -27,10 +27,12 @@ extern void cerrorTest();
 extern void structTest();
 extern void classTest();
 extern void overrideTest();
+extern void polymorphismTest();
 
 
 int main() {
-    overrideTest();
+    polymorphismTest();
+//    overrideTest();
 //    classTest();
 //    structTest();
 //    cerrorTest();
