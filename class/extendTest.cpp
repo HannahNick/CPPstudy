@@ -24,6 +24,10 @@ public:
     virtual void doSomething(){
         cout << "Person do Something" << endl;
     }
+    /**
+     * 定义抽象方法 必须得有默认实现
+     */
+    virtual void doSomething2(){}
 };
 
 class Father{
@@ -59,6 +63,7 @@ public:
     string getName(){
         return mName;
     };
+
 };
 
 class Female: public Person{
@@ -78,6 +83,10 @@ public:
      */
     void doSomething() override{
         cout << "Female do something" << endl;
+    }
+
+    void doSomething2() override{
+        cout << "Female do something2" << endl;
     }
 private:
     string mName;
@@ -108,4 +117,5 @@ void polymorphismTest(){
     person = &male;
 
     person->doSomething();
+    person->doSomething2();
 }
