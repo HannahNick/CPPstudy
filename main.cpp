@@ -33,10 +33,16 @@ extern void writeFile();
 extern void readAndWriteFile();
 extern void exceptionTest();
 extern void exceptionTest2();
+extern void newMemoryTest();
+extern void newCharTest();
+extern void twoDimensionalArray();
 
 
 int main() {
-    exceptionTest2();
+    twoDimensionalArray();
+//    newCharTest();
+//    newMemoryTest();
+//    exceptionTest2();
 //    exceptionTest();
 //    readAndWriteFile();
 //    writeFile();
