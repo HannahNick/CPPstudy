@@ -36,10 +36,12 @@ extern void exceptionTest2();
 extern void newMemoryTest();
 extern void newCharTest();
 extern void twoDimensionalArray();
+extern void namespaceTest();
 
 
 int main() {
-    twoDimensionalArray();
+    namespaceTest();
+//    twoDimensionalArray();
 //    newCharTest();
 //    newMemoryTest();
 //    exceptionTest2();
