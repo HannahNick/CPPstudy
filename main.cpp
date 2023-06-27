@@ -28,10 +28,16 @@ extern void structTest();
 extern void classTest();
 extern void overrideTest();
 extern void polymorphismTest();
+extern void readFile();
+extern void writeFile();
+extern void readAndWriteFile();
 
 
 int main() {
-    polymorphismTest();
+    readAndWriteFile();
+//    writeFile();
+//    readFile();
+//    polymorphismTest();
 //    overrideTest();
 //    classTest();
 //    structTest();

@@ -4,6 +4,7 @@
 
 #include "fstream"
 #include "iostream"
+#include "string.h"
 
 using namespace std;
 
@@ -33,4 +34,52 @@ void openFile(){
     outfile.open("a.txt",ios::out|ios::trunc);
     //用于读写
     outfile.open("a.txt",ios::out|ios::in);
+    //关闭文件
+    outfile.close();
+}
+
+/**
+ * 读文件
+ */
+void readFile(){
+    char content[100];
+    ifstream infile;
+    infile.open("D:\\aa.txt");
+    infile>>content;
+    cout<< content<<endl;
+    infile.close();
+}
+
+/**
+ * 写文件
+ */
+void writeFile(){
+    char content[100];
+    ofstream outfile;
+    outfile.open("D:\\aa.txt",ios::app);
+    strcpy(content,"nick is awesome");
+    outfile<< content <<endl;
+    outfile.close();
+}
+
+void readAndWriteFile(){
+    char scanContent[100];
+    char fileContent[100];
+    fstream file;
+    file.open("D:\\aa.txt",ios::app|ios::in);
+    cout << "please enter something" << endl;
+    cin.getline(scanContent, 100);
+
+    cout << "get scanContent: " << scanContent << endl;
+
+    file << scanContent << endl;
+
+    cout << "file write finish" << endl;
+    //写完了之后再读不行
+    file >> fileContent;
+
+    cout << "read file finish" << endl;
+    cout << fileContent << endl;
+
+    file.close();
 }
