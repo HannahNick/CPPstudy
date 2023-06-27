@@ -31,10 +31,14 @@ extern void polymorphismTest();
 extern void readFile();
 extern void writeFile();
 extern void readAndWriteFile();
+extern void exceptionTest();
+extern void exceptionTest2();
 
 
 int main() {
-    readAndWriteFile();
+    exceptionTest2();
+//    exceptionTest();
+//    readAndWriteFile();
 //    writeFile();
 //    readFile();
 //    polymorphismTest();
