@@ -21,8 +21,34 @@ namespace player{
     }
 }
 
+namespace Usb{
+    void insert(){
+
+    }
+
+    void read(){
+
+    }
+
+    namespace display{
+        int a= 0;
+        void show(){
+
+        }
+    }
+}
+
 using namespace print;
 using namespace player;
+
+/**
+ * 可以只引用某个项目
+ */
+using Usb::insert;
+/**
+ * 使用嵌套命名空间
+ */
+using namespace Usb::display;
 
 void namespaceTest(){
     char c[25];
@@ -31,4 +57,9 @@ void namespaceTest(){
 
     player::play();
 
+}
+
+void namespaceTest2(){
+    insert();
+    int b = a+1;
 }
