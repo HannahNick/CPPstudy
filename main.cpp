@@ -37,10 +37,14 @@ extern void newMemoryTest();
 extern void newCharTest();
 extern void twoDimensionalArray();
 extern void namespaceTest();
+extern void genericsTest();
+extern void genericsTest2();
 
 
 int main() {
-    namespaceTest();
+    genericsTest2();
+//    genericsTest();
+//    namespaceTest();
 //    twoDimensionalArray();
 //    newCharTest();
 //    newMemoryTest();
